@@ -35,7 +35,11 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           ls
+      
+      # rm file.txt wrong place
+      - name: Remove file1.txt
+        run : rm file1.txt
+
       # Running the helloworld script
       - name: Running Script
-        run: ./helloworld.sh
-        shell: bash
+        run: bash ./helloworld.sh
