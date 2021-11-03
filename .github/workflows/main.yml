@@ -37,4 +37,6 @@ jobs:
           ls
       # Running the helloworld script
       - name: Running Script on server
-        run: /bin/bash helloworld.sh
+        run: |
+          /bin/bash helloworld.sh
+          ls
