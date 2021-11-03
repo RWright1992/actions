@@ -36,7 +36,6 @@ jobs:
           echo test, and deploy your project.
           ls
       # Running the helloworld script
-      - name: Running Script on server
-        run: |
-          /bin/bash helloworld.sh
-          ls -al
+      - name: Running Script
+        run: ./helloworld.sh
+        shell: bash
