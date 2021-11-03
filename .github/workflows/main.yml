@@ -39,4 +39,4 @@ jobs:
       - name: Running Script on server
         run: |
           /bin/bash helloworld.sh
-          ls
+          ls -al
