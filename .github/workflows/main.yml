@@ -35,18 +35,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          ls
-
-      # Running the helloworld script
-      - name: Running Script
-        run: bash ./helloworld.sh
-      
-      # rm file.txt wrong place
-      - name: Remove file1.txt
-        run : rm file1.txt
-  lsjob:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: List file contents
-        run : ls
+          
+      - name: List current directory contents
+        run: ls -la
