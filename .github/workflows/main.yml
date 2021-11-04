@@ -43,9 +43,9 @@ jobs:
       # rm file.txt wrong place
       - name: Remove file1.txt
         run : rm file1.txt
-  job2:
+  lsjob:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: List file contents
-      - run : ls
+        run : ls
