@@ -43,7 +43,6 @@ jobs:
       # rm file.txt wrong place
       - name: Remove file1.txt
         run : rm file1.txt
-  
   job2:
     runs-on: ubuntu-latest
     steps:
